@@ -1,0 +1,176 @@
+.login-container {
+    font-size: 0;
+    .form-container {
+        display: inline-block;
+        width: 796px;
+        min-height: 100vh;
+        height: 100%;
+        vertical-align: top;
+        position: relative;
+        @include media-xs {
+            display: block;
+            width: 100%;
+        }
+        @include media-xs-portrait {
+            padding: 50px 0;
+        }
+        @include media-sm {
+            display: block;
+            width: 100%;
+        }
+        @include media-md {
+            width: 50%;
+        }
+        .inner-form-container {
+            width: 373px;
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @include media-xs-portrait {
+                width: 85%;
+            }
+            img {
+                width: 266px;
+                height: 77px;
+                display: block;
+                margin: 0 auto 50px auto;
+            }
+            span {
+                &.page-title {
+                    display: block;
+                    margin: 0 auto 50px auto;
+                    color: $dark;
+                    text-transform: uppercase;
+                    @include ralewayExtraBold();
+                    font-size: 1.5rem;
+                    letter-spacing: 0px;
+                    text-align: center;
+                }
+            }
+            .additional-fields {
+                position: relative;
+                margin: -10px 0 40px 0;
+                a {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    color: $dark;
+                    line-height: 1.2;
+                    font-size: 0.75rem;
+                    @include ralewayBold();
+                    text-decoration: none;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 1px;
+                        bottom: -3px;
+                        left: 0;
+                        visibility: hidden;
+                        -webkit-transform: scaleX(0);
+                        transform: scaleX(0);
+                        -webkit-transition: all .3s ease-in-out 0s;
+                        transition: all .3s ease-in-out 0s;
+                        background: $dark;
+                    }
+                    &:hover {
+                        &:after {
+                            visibility: visible;
+                            -webkit-transform: scaleX(1);
+                            transform: scaleX(1);
+                        }
+                    }
+                }
+            }
+            .primary-btn {
+                width: 100%;
+                display: block;
+            }
+            .success-msg-container {
+                text-align: center;
+                margin-top: -20px;
+                p {
+                    color: #707070;
+                    font-size: 1.25rem;
+                    line-height: 1.4;
+                    margin-bottom: 30px;
+                }
+                a {
+                    &.back-to-login {
+                        color: $mainRed;
+                        font-size: 1.25rem;
+                        line-height: 1.4;
+                        @include ralewayBold();
+                        text-decoration: none;
+                        position: relative;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 1px;
+                            bottom: -3px;
+                            left: 0;
+                            visibility: hidden;
+                            -webkit-transform: scaleX(0);
+                            transform: scaleX(0);
+                            -webkit-transition: all .3s ease-in-out 0s;
+                            transition: all .3s ease-in-out 0s;
+                            background: $mainRed;
+                        }
+                        &:hover {
+                            &:after {
+                                visibility: visible;
+                                -webkit-transform: scaleX(1);
+                                transform: scaleX(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bg-container {
+        display: inline-block;
+        width: calc(100% - 796px);
+        vertical-align: top;
+        position: relative;
+        min-height: 100vh;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        @include media-xs {
+            display: none;
+        }
+        @include media-sm {
+            display: none;
+        }
+        @include media-md {
+            width: 50%;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent linear-gradient(180deg, #B5B5B5 0%, #040000 100%) 0% 0% no-repeat padding-box;
+            mix-blend-mode: hard-light;
+        }
+        span {
+            width: 70%;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $white;
+            @include ralewayMedium();
+            font-size: 1.875rem;
+            line-height: 35px;
+            letter-spacing: 0px;
+        }
+    }
+}

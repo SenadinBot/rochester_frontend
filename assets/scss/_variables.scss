@@ -1,0 +1,135 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+$mainRed: #8C2030;
+$dark: #231F20;
+$gray: #CCCCCC;
+$green: #56AC56;
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,600i,700,700i,800,900,900i&display=swap');
+@mixin ralewayLight() {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@mixin ralewayRegular() {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin ralewayItalic() {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@mixin ralewayMedium() {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+@mixin ralewayMediumItalic() {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+@mixin ralewaySemiBold() {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+@mixin ralewaySemiBoldItalic() {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+@mixin ralewayBold() {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin ralewayBoldItalic() {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+@mixin ralewayExtraBold() {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+@mixin ralewayBlack() {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+}
+
+@mixin ralewayBlackItalic() {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+}
+
+// Media Queries
+// Extra Small Devices, Mobile .visible-xs-*
+@mixin media-xs {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin media-xs-portrait {
+    @media (max-width: 767px) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin media-xs-landscape {
+    @media (max-width: 767px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+// Small Devices, Tablet portrait .visible-sm-* 
+@mixin media-sm {
+    @media (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+// Medium Devices, Tablet landscape .visible-md-*
+@mixin media-md {
+    @media (min-width: 992px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+// Medium Devices, Tablet landscape .visible-md-*
+@mixin media-mlg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+// Large Devices, Desktop .visible-lg-* 
+@mixin media-lg {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+// Extra Large Devices, Desktop .visible-lg-* 
+@mixin media-xlg {
+    @media (min-width: 1441px) {
+        @content;
+    }
+}
