@@ -17,7 +17,7 @@
       margin-top: 54px; } }
 
 #content {
-  padding: 65px 15px 0px 60px;
+  padding: 65px 63px 0px 60px;
   transition: all 0.3s;
   width: calc(100% - 215px);
   overflow-y: scroll;
@@ -607,6 +607,8 @@ p {
             background-size: cover;
             background-repeat: no-repeat;
             background-image: url("../../../assets/images/white-select-icon.svg"); }
+        .sidebar ul > li > a.no-submenu span:before {
+          display: none; }
       .sidebar ul > li div a {
         font-family: 'Raleway', sans-serif;
         font-style: normal;

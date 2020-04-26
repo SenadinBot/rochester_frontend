@@ -100,6 +100,13 @@
                         background-image: url("../../../assets/images/white-select-icon.svg");
                     }
                 }
+                &.no-submenu {
+                    span {
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
             }
             div {
                 a {
