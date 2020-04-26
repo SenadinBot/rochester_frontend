@@ -1,0 +1,109 @@
+.card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 30px #00000017;
+    width: 60vw;
+    border: none;
+    border-radius: 0;
+    height: 100%;
+    @include media-xs {
+        width: 100%;
+    }
+    @include media-sm {
+        width: 100%;
+    }
+    @include media-md {
+        width: 100%;
+    }
+    .card-header {
+        padding: 30px 40px;
+        margin-bottom: 5px;
+        background-color: transparent;
+        border: none;
+        @include media-xs {
+            padding: 20px;
+            margin-bottom: 0;
+        }
+        span {
+            letter-spacing: 0px;
+            color: #888888;
+            font-size: 1rem;
+            @include ralewayRegular();
+            display: block;
+            @include media-xs {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .card-body {
+        padding: 0;
+        .btn-container {
+            .primary-btn {
+                min-width: 152px;
+                @include media-xs-portrait {
+                    min-width: calc(100% / 2 - 11px);
+                }
+                &:first-child {
+                    margin-right: 16px;
+                }
+            }
+        }
+        .form-container {
+            padding: 0 0 30px 67px;
+            max-width: 637px;
+            @include media-xs {
+                max-width: 100%;
+                padding: 20px;
+            }
+        }
+        .table-container {
+            .form-group {
+                padding: 40px;
+                background-color: #EFEFEF;
+                margin-bottom: 0;
+                @include media-xs {
+                    padding: 20px;
+                }
+                @include media-sm {
+                    padding: 30px;
+                }
+            }
+            .table-responsive {
+                margin-bottom: 30px;
+                @include media-xs {
+                    margin-bottom: 20px;
+                }
+                @include media-md {
+                    margin-bottom: 20px;
+                }
+                thead {
+                    th {
+                        &:first-child {
+                            padding-left: 40px;
+                            @include media-xs {
+                                padding-left: 20px;
+                            }
+                            @include media-sm {
+                                padding-left: 30px;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            &:first-child {
+                                padding-left: 40px;
+                                @include media-xs {
+                                    padding-left: 20px;
+                                }
+                                @include media-sm {
+                                    padding-left: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

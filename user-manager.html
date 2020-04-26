@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User Manager</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="">
+
+    <!-- Styles -->
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <button class="sidebar-navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarNavDropdown" aria-controls="sidebarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+            </button>
+            <div class="logo-container">
+                <a href="/">
+                    <img src="/assets/images/login-logo.png" alt="Logo Image">
+                </a>
+            </div>
+            <div class="header-container">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="/assets/images/user-img.png" alt="Image">
+                                    <span>John Doe</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">
+                                        <img src="./assets/images/user-gray.svg" alt="Icon"> Account Details</a>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="./assets/images/user-gray.svg" alt="Icon"> Item 2</a>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="./assets/images/user-gray.svg" alt="Icon"> Item 3</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="wrapper">
+        <div class="sidebar collapse navbar-collapse" id="sidebarNavDropdown">
+            <ul>
+                <li>
+                    <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="">
+                        <img src="./assets/images/user-red.svg" alt="Icon">
+                        <span>User Manager</span>
+                    </a>
+                    <div id='submenu1' class="collapse">
+                        <ul>
+                            <li>
+                                <a href="#">+ Add a new</a>
+                            </li>
+                            <li>
+                                <a href="#">+ Add a new</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="">
+                        <img src="./assets/images/user-red.svg" alt="Icon">
+                        <span>My Account</span>
+                    </a>
+                    <div id='submenu2' class="collapse">
+                        <ul>
+                            <li>
+                                <a href="#">Account Item 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Account Item 1</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <div class="card">
+                <div class="card-header">
+                    <span>User Manager</span>
+                </div>
+                <div class="card-body">
+                    <div class="table-container">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search for users">
+                        </div>
+                        <div class="table-responsive table-borderless">
+                            <table class="table">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>Username</th>
+                                        <th>Phone</th>
+                                        <th>Fax</th>
+                                        <th>Group</th>
+                                        <th>Office</th>
+                                        <th>Status</th>
+                                        <th>Select</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>admin</td>
+                                        <td>Phone</td>
+                                        <td>Fax</td>
+                                        <td>Group</td>
+                                        <td>Office</td>
+                                        <td>Status</td>
+                                        <td></td>
+                                        <td class="dropdown">
+                                            <a class="dropdown-toggle" href="#" id="tableActionOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span>Actions</span>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="tableActionOne">
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./assets/images/user-gray.svg" alt="Icon"> Account Details</a>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./assets/images/user-gray.svg" alt="Icon"> Item 2</a>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./assets/images/user-gray.svg" alt="Icon"> Item 3</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>admin</td>
+                                        <td>Phone</td>
+                                        <td>Fax</td>
+                                        <td>Group</td>
+                                        <td>Office</td>
+                                        <td>Status</td>
+                                        <td></td>
+                                        <td class="dropdown">
+                                            <a class="dropdown-toggle" href="#" id="tableActionOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span>Actions</span>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="tableActionOne">
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./assets/images/user-gray.svg" alt="Icon"> Account Details</a>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./assets/images/user-gray.svg" alt="Icon"> Item 2</a>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./assets/images/user-gray.svg" alt="Icon"> Item 3</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>admin</td>
+                                        <td>Phone</td>
+                                        <td>Fax</td>
+                                        <td>Group</td>
+                                        <td>Office</td>
+                                        <td>Status</td>
+                                        <td></td>
+                                        <td class="dropdown">
+                                            <a class="dropdown-toggle" href="#" id="tableActionOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span>Actions</span>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="tableActionOne">
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./assets/images/user-gray.svg" alt="Icon"> Account Details</a>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./assets/images/user-gray.svg" alt="Icon"> Item 2</a>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./assets/images/user-gray.svg" alt="Icon"> Item 3</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>admin</td>
+                                        <td>Phone</td>
+                                        <td>Fax</td>
+                                        <td>Group</td>
+                                        <td>Office</td>
+                                        <td>Status</td>
+                                        <td></td>
+                                        <td class="dropdown">
+                                            <a class="dropdown-toggle" href="#" id="tableActionOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span>Actions</span>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="tableActionOne">
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./assets/images/user-gray.svg" alt="Icon"> Account Details</a>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./assets/images/user-gray.svg" alt="Icon"> Item 2</a>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./assets/images/user-gray.svg" alt="Icon"> Item 3</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>admin</td>
+                                        <td>Phone</td>
+                                        <td>Fax</td>
+                                        <td>Group</td>
+                                        <td>Office</td>
+                                        <td>Status</td>
+                                        <td></td>
+                                        <td class="dropdown">
+                                            <a class="dropdown-toggle" href="#" id="tableActionOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span>Actions</span>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="tableActionOne">
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./assets/images/user-gray.svg" alt="Icon"> Account Details</a>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./assets/images/user-gray.svg" alt="Icon"> Item 2</a>
+                                                <a class="dropdown-item" href="#">
+                                                    <img src="./assets/images/user-gray.svg" alt="Icon"> Item 3</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul class="pagination" aria-label="Pagination">
+                            <li><a href="">Previous</a></li>
+                            <li><a href="">1</a></li>
+                            <li class="active"><a href="">2</a></li>
+                            <li class="disabled"><a href="#">...</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">6</a></li>
+                            <li><a href="">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+.table-responsive,
+.table-responsive-sm,
+.table-responsive-md,
+.table-responsive-lg,
+.table-responsive-xl {
+    background-color: $white;
+    th,
+    td {
+        @include ralewayRegular();
+        font-size: 1rem;
+        line-height: 1.2;
+        color: $dark;
+        letter-spacing: 0.5px;
+        padding: 22px 12px;
+    }
+    thead {
+        &.thead-light {
+            th {
+                @include ralewayBold();
+                border: none;
+                background-color: #EFEFEF;
+                color: $dark;
+            }
+        }
+    }
+    tbody {
+        tr {
+            &:nth-child(even) {
+                background-color: #EFEFEF;
+            }
+        }
+    }
+    .dropdown {
+        .dropdown-toggle {
+            background-color: $mainRed;
+            box-shadow: 0px 3px 30px #00000003;
+            border-radius: 9px;
+            padding: 12px 18px 12px 18px;
+            color: $white;
+            font-size: 0.875rem;
+            line-height: 1.2;
+            @include ralewayMedium();
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            &:after {
+                margin-left: 5px;
+                vertical-align: 0;
+                border-top: 0.4em solid;
+                border-right: .4em solid transparent;
+                border-bottom: 0;
+                border-left: .4em solid transparent;
+                position: relative;
+                top: -1px;
+            }
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+        .dropdown-menu {
+            padding: 0;
+            box-shadow: 0px 3px 30px #00000017;
+            border: none;
+            border-radius: 0;
+            @include media-xs-portrait {
+                right: 0;
+                left: initial;
+            }
+            .dropdown-item {
+                padding: 15px;
+                border-bottom: 1px solid #EFEFEF;
+                color: $dark;
+                font-size: 0.875rem;
+                line-height: 1.2;
+                @include ralewayBold();
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+                &:last-child {
+                    border-bottom: none;
+                }
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    margin-right: 8px;
+                    display: inline-block;
+                    position: relative;
+                    top: -2px;
+                }
+            }
+        }
+    }
+}

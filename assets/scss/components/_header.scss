@@ -1,0 +1,245 @@
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: $white;
+    box-shadow: 0px 3px 30px #00000003;
+    padding: 10px 63px 12px 30px;
+    min-height: 70px;
+    text-align: right;
+    @include media-md {
+        padding: 10px 30px 12px 30px;
+    }
+    @include media-sm {
+        padding: 10px 30px 12px 30px;
+    }
+    @include media-xs {
+        padding: 10px 10px 12px 10px;
+    }
+    @include media-xs-portrait {
+        min-height: 54px;
+    }
+    .logo-container {
+        position: absolute;
+        top: 17px;
+        left: 28px;
+        @include media-xs {
+            left: 50%;
+        }
+        @include media-sm {
+            left: 50%;
+        }
+        @include media-xs-portrait {
+            top: 12px;
+            transform: translateX(-60%);
+        }
+        @include media-xs-landscape {
+            transform: translateX(-50%);
+        }
+        @include media-sm {
+            transform: translateX(-50%);
+        }
+        img {
+            width: 121px;
+            height: 35px;
+            @include media-xs-portrait {
+                width: 100px;
+                height: 25px;
+            }
+        }
+        .menu-icon {
+            display: none;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            right: 0;
+            top: -6px;
+            cursor: pointer;
+            &:hover {
+                span {
+                    background-color: $white;
+                    &:after,
+                    &:before {
+                        width: 100%;
+                        background-color: $white;
+                    }
+                }
+            }
+            @include media-xs {
+                right: initial;
+                left: 0;
+                top: 5px;
+            }
+            span {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: rgba(255, 255, 255, .8);
+                -webkit-transition: .3s cubic-bezier(.97, .75, .61, 1.84);
+                transition: .3s cubic-bezier(.97, .75, .61, 1.84);
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                border-radius: 2px;
+                &:after,
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    height: 2px;
+                    background-color: rgba(16, 27, 51, .8);
+                    -webkit-transition: .3s cubic-bezier(.97, .75, .61, 1.84);
+                    transition: .3s cubic-bezier(.97, .75, .61, 1.84);
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    border-radius: 2px;
+                    background-color: rgba(255, 255, 255, .8);
+                }
+                &:after {
+                    top: 6px;
+                    width: 70%;
+                }
+                &:before {
+                    top: -6px;
+                    width: 40%;
+                }
+            }
+        }
+    }
+    .header-container {
+        .navbar {
+            padding: 0;
+            position: absolute;
+            right: 63px;
+            @include media-xs {
+                right: 10px;
+            }
+            @include media-xs-portrait {
+                top: 13px;
+            }
+            @include media-sm {
+                right: 30px;
+            }
+            @include media-md {
+                right: 30px;
+            }
+            .nav-item {
+                .nav-link {
+                    background-color: $mainRed;
+                    box-shadow: 0px 3px 30px #00000003;
+                    border-radius: 9px;
+                    padding: 0;
+                    color: $white;
+                    font-size: 0.875rem;
+                    line-height: 1.2;
+                    @include ralewayRegular();
+                    padding-right: 14px;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                    @include media-xs-portrait {
+                        font-size: 0.7rem;
+                        padding: 7px;
+                    }
+                    img {
+                        width: 55px;
+                        height: 48px;
+                        object-fit: cover;
+                        @include media-xs-portrait {
+                            display: none;
+                        }
+                    }
+                    &.dropdown-toggle {
+                        &:after {
+                            margin-left: 0;
+                            vertical-align: 0;
+                            border-top: 0.4em solid;
+                            border-right: .4em solid transparent;
+                            border-bottom: 0;
+                            border-left: .4em solid transparent;
+                            position: relative;
+                            top: -1px;
+                        }
+                    }
+                    span {
+                        padding-left: 10px;
+                        padding-right: 6px;
+                    }
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+                .dropdown-menu {
+                    margin-top: 12px;
+                    padding: 0;
+                    box-shadow: 0px 3px 30px #00000017;
+                    border: none;
+                    border-radius: 0;
+                    @include media-xs-portrait {
+                        margin-top: 15px;
+                        right: 0;
+                        left: initial;
+                    }
+                    .dropdown-item {
+                        padding: 15px;
+                        border-bottom: 1px solid #EFEFEF;
+                        color: $dark;
+                        font-size: 0.875rem;
+                        line-height: 1.2;
+                        @include ralewayBold();
+                        -webkit-transition: all 0.3s ease;
+                        -moz-transition: all 0.3s ease;
+                        -o-transition: all 0.3s ease;
+                        transition: all 0.3s ease;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                            margin-right: 8px;
+                            display: inline-block;
+                            position: relative;
+                            top: -2px;
+                        }
+                    }
+                }
+            }
+            .navbar-toggler {
+                outline: none;
+                position: absolute;
+                right: 0;
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+                span {
+                    background-color: $mainRed;
+                    border-radius: 100%;
+                    height: 6px;
+                    width: 6px;
+                    position: absolute;
+                    &:after,
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        background-color: $mainRed;
+                        border-radius: 100%;
+                        height: 6px;
+                        width: 6px;
+                        right: 0;
+                    }
+                    &:before {
+                        top: -8px;
+                    }
+                    &:after {
+                        top: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
